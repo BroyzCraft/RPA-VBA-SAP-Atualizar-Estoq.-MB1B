@@ -5,13 +5,6 @@ Sub SAP_Logon()
     usuario = UCase(InputBox("Digite seu login SAP: "))
     senha = InputBox("Digite sua senha SAP: ")
     
-    'debug
-    'usuario = UCase(""BOMARQUES")
-    'senha = "321654987Leo!"
-    
-    'usuario = UCase("NAMERICO")
-    'senha = "Laura@2007"
-    
     Dim SapGui, Applic, connection, session, WSHShell
     
     'Abre o Sap instalado na sua máquina

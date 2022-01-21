@@ -95,12 +95,12 @@ Do While aux < totalLinhas + 1
     aux = aux + 16
     
     'cria backup
-    Range("A" & primeiraLinha & ":B" & primeiraLinha + 10).Copy
+    Range("A" & primeiraLinha & ":B" & primeiraLinha + 15).Copy
     tot = Range("G1000000").End(xlUp).Row
     Range("G" & tot + 1).PasteSpecial xlPasteValues
     
     'apaga
-    Range("A" & primeiraLinha & ":B" & primeiraLinha + 10).Select
+    Range("A" & primeiraLinha & ":B" & primeiraLinha + 15).Select
     Selection.Delete Shift:=xlUp
 
 Loop
